@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ExamenGlobalCitizen
 {
-    public class Prenda
+    public abstract class Prenda
     {
         public int stock { get; internal set; }
         public float precio { get; internal set; }
@@ -16,11 +16,6 @@ namespace ExamenGlobalCitizen
         {
             this.precio = precio;
             this.stock = stock;
-            RandomPremium();
-        }
-        public void RandomPremium() {
-            Random r = new Random();
-            int res = r.Next(2);
         }
 
         public virtual float Cotizar(bool esPremium) {
