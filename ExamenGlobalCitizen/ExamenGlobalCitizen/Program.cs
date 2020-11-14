@@ -19,7 +19,7 @@ namespace ExamenGlobalCitizen
 
             //Cargar valores
 
-            Vendedor vendedor = new Vendedor("Pepe", "Honguito", 123);
+            Vendedor vendedor = new Vendedor("Pepe", "Honguito", 1);
 
             tienda = new Tienda("Atienda", "SanMartin 321");
 

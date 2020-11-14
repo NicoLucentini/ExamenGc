@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ExamenGlobalCitizen
 {
-    public class Cotizacion
+    public class Cotizacion : IImprimible
     {
         static int idCount;
 
@@ -29,6 +29,15 @@ namespace ExamenGlobalCitizen
             this.prendaInfo = prendaInfo;
         }
 
-       
+        //Metodo implementado de interfaz
+        public void Imprimir()
+        {  
+            Console.WriteLine(ToString());
+        }
+
+        public override string ToString()
+        {
+            return ($"ID : {id} , idVendedor {idVendedor}, date {date.ToShortDateString()}, prenda {prendaInfo}, cantidad {cantidad}, total {total}" );
+        }
     }
 }

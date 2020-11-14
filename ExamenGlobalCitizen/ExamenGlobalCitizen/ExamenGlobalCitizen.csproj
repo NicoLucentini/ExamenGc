@@ -61,6 +61,7 @@
     <Compile Include="Historial.Designer.cs">
       <DependentUpon>Historial.cs</DependentUpon>
     </Compile>
+    <Compile Include="IImprimible.cs" />
     <Compile Include="Pantalones.cs" />
     <Compile Include="Prenda.cs" />
     <Compile Include="Program.cs" />

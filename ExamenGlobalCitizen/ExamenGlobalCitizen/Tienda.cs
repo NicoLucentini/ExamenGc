@@ -11,7 +11,7 @@ namespace ExamenGlobalCitizen
         public string direccion { get; internal set; }
         private List<Prenda> prendas;
 
-        public  Vendedor vendedor;
+        private  Vendedor vendedor;
         
         public Tienda(string nombre, string direccion) {
             this.nombre = nombre;
@@ -27,16 +27,7 @@ namespace ExamenGlobalCitizen
         public void SetVendedor(Vendedor vendedor) {
             this.vendedor = vendedor;
         }
-
-        public int ObtenerStock(Prenda prenda) {
-            foreach (var p in prendas) {
-                if (p == prenda) {
-                    return p.stock;
-                }
-            }
-            return 0;
-        }
-
+       
         public Prenda ObtenerCamisa(bool mangaCorta, bool mao) {
             foreach (var p in prendas) {
 

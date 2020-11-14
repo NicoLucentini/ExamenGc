@@ -22,6 +22,8 @@ namespace ExamenGlobalCitizen
             historial = new Historial_Vendedor();
         }
 
-
+        public void AgregarCotizacion(Cotizacion cotizacion) {
+            historial.AgregarCotizacion(cotizacion);
+        }
     }
 }

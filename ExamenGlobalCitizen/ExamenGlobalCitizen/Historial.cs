@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace ExamenGlobalCitizen
 {
-    public partial class Historial : Form
+    public partial class Historial : Form , IImprimible
     {
         private List<Cotizacion> cotizaciones;
         public Historial(List<Cotizacion> cotizaciones)
@@ -35,6 +35,15 @@ namespace ExamenGlobalCitizen
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             
+        }
+
+        //Metodo implementado de interfaz
+        public void Imprimir()
+        {
+            foreach (var c in cotizaciones)
+            {
+                c.Imprimir();
+            }
         }
     }
 }
