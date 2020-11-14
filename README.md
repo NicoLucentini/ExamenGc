@@ -7,6 +7,9 @@ No, se puede heredar solo una clase, aunque se pueden implementar mas de 1 inter
 2) ¿Cuándo utilizaría una Clase Abstracta en lugar de una Interfaz? Ejemplifique.
 Cuando se requiere que la clase que herede de la Clase abstracta implemente funcionalidad en alguno de sus metodos y/o utilice variables de la clase Abstracta:
 
+Ejemplo Usaria una clase abstract para Enemigos de un videojuego llamada BaseEnemy, que tengan datos de particulares de enemigos y una interfaz IDamageable, que la puede usar tanto Enemigos como un arbol
+
+
 3) ¿Qué implica una relación de Generalización entre dos clases?
 Implica que hay una relacion de herencia, siendo A una clase padre y B una clase hija, B es una clase A, B contiene atributos y metodos de A.
 
