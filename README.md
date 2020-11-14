@@ -1,7 +1,6 @@
 # ExamenGc
 Examen del pre curso de Global Citizen
 
-
 1) ¿C# permite herencia múltiple?
 No, se puede heredar solo una clase, aunque se pueden implementar mas de 1 interfaz
 
