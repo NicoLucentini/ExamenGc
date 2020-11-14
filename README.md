@@ -17,6 +17,6 @@ Una clase puede implementar 1 o mas interfaces, esta relacion es en la que se ba
 En ambos caso se trata de la relacion entre 2 objetos, en donde B pertenece a A. En caso de la Agregacion estos objetos son independientes, y en caso de que (A) sea eliminado (B)  sigue existiendo en el contexto. En el caso de la Composicion, existe una relacion pero un objeto (B) es dependiente del objeto (A), si A es eliminado, el objeto (B) tambien.
 
 6)
-  A) V
-  B) F
-  C) F
+  A- V
+  B- F
+  C- F
