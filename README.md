@@ -2,11 +2,11 @@
 Examen del pre curso de Global Citizen
 
 
-  1) ¿C# permite herencia múltiple?
-  No, se puede heredar solo una clase, aunque se pueden implementar mas de 1 interfaz
+1) ¿C# permite herencia múltiple?
+No, se puede heredar solo una clase, aunque se pueden implementar mas de 1 interfaz
 
-  2)¿Cuándo utilizaría una Clase Abstracta en lugar de una Interfaz? Ejemplifique.
-  Cuando se requiere que la clase que herede de la Clase abstracta implemente funcionalidad en alguno de sus metodos y/o utilice variables de la clase Abstracta:
+2)¿Cuándo utilizaría una Clase Abstracta en lugar de una Interfaz? Ejemplifique.
+Cuando se requiere que la clase que herede de la Clase abstracta implemente funcionalidad en alguno de sus metodos y/o utilice variables de la clase Abstracta:
 
 3)¿Qué implica una relación de Generalización entre dos clases?
 Implica que hay una relacion de herencia, siendo A una clase padre y B una clase hija, B es una clase A, B contiene atributos y metodos de A.
