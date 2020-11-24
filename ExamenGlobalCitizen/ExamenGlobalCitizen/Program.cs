@@ -33,6 +33,14 @@ namespace ExamenGlobalCitizen
             tienda.AgregarPrenda(new Pantalones(200, 1500, true));
             tienda.AgregarPrenda(new Pantalones(200, 500, false));
 
+
+            List<Pantalones> temp = tienda.ObtenerPrenda<Pantalones>( (x)=> x.esChupin );
+
+            foreach (var t in temp) {
+                Console.WriteLine(t.ToString());
+            }
+
+
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Form1(tienda, vendedor));
