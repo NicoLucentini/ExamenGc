@@ -27,7 +27,37 @@ namespace ExamenGlobalCitizen
         public void SetVendedor(Vendedor vendedor) {
             this.vendedor = vendedor;
         }
-       
+
+        public List<T> ObtenerPrenda<T>()  where T : Prenda {
+            List<T> temp = new List<T>();
+
+            foreach (var prenda in prendas) {
+                if (prenda is T)
+                    temp.Add((T)prenda);
+            }
+            return temp;
+        }
+
+
+        //Improved coded instead of ObtenerCamisas y Obtener Pantalones...
+        //Eleige el tipo de prenda y como filtrarla
+        public List<T> ObtenerPrenda<T>(System.Func<T,bool> func) where T : Prenda
+        {
+            List<T> temp = new List<T>();
+
+            foreach (var prenda in prendas)
+            {
+                if (prenda is T)
+                {
+                    if(func((T)prenda))
+                    temp.Add((T)prenda);
+                }
+            }
+
+
+            return temp;
+        }
+
         public Prenda ObtenerCamisa(bool mangaCorta, bool mao) {
             foreach (var p in prendas) {
 
